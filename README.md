@@ -6,34 +6,14 @@ Users can ask legal questions and receive grounded answers with **retrieved law 
 
 ---
 
-## 🚀 End-to-End Workflow
+## 🧩 System Architecture
 
-```mermaid
-flowchart TD
-
-A[📄 Nepal Penal Code PDF] --> B[🔍 Extract Text — PyMuPDF]
-B --> C[🧹 Clean & Normalize Text — Regex]
-C --> D[📑 Convert to Structured JSON<br/>Part / Chapter / Section / Subsection]
-D --> E[🔗 Generate Chunk IDs]
-E --> F[🧠 Encode Text — all-mpnet-base-v2]
-F --> G[(📦 Embeddings.npy)]
-D --> H[(🗂 Metadata.json)]
-
-G --> I[📚 Build FAISS Index]
-H --> I
-
-I --> J[🌐 Streamlit App]
-J --> K[📝 User Question]
-K --> L[🔎 Retrieve Top-K Relevant Chunks]
-L --> M[🤖 Groq LLM — LLaMA 3.1 8B Instant]
-M --> N[🧾 Final Answer + Retrieved Law]
-```
-
----
+![System Architecture](docs/images/architecture-diagram.png)
 
 ## 📁 Project Structure
 
 ```
+---
 
 rag/
 │
@@ -215,7 +195,6 @@ It is **NOT a substitute for legal advice**.
 ## 🙌 Author
 
 **Yamraj Khadka** — Computer Engineering Student (Nepal)  
-Passionate about **AI, ML & Real-world Impact Projects**
 
 ---
 
