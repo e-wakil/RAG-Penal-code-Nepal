@@ -8,7 +8,7 @@ Users can ask legal questions and receive grounded answers with **retrieved law 
 
 ## 🧩 System Architecture
 
-![System Architecture](docs/images/architecture-diagram.png)
+![System Architecture](https://github.com/yamrajkhadka/rag/blob/main/deepseek_mermaid_20251229_61919b.png)
 
 ## 📁 Project Structure
 
