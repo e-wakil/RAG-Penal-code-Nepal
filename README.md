@@ -119,8 +119,8 @@ Features:
 ## 🔧 Installation
 
 ```bash
-git clone your-repo
-cd your-repo
+git clone repo
+cd repo
 python3 -m venv ragvenv
 source ragvenv/bin/activate
 pip install -r requirements.txt
